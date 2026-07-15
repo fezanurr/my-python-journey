@@ -1,0 +1,146 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNS0FuWDqO13HpZji2qC91r",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/fezanurr/my-python-journey/blob/main/01_Temel_Hesaplamalar_ve_Girisler\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EzKrYjfxzUxz",
+        "outputId": "0f7b5190-99ef-4654-a8a2-4212f323b555"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Karenin bir kenar uzunluğunu giriniz: 19\n",
+            "Karenin alanı 361.0 çevresi 76.0 dir\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Karenin Alanı ve Çevresi\n",
+        "a = float(input('Karenin bir kenar uzunluğunu giriniz: '))\n",
+        "alan = a * a\n",
+        "cevre = 4 * a\n",
+        "print(f'Karenin alanı {alan} çevresi {cevre} dir')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Doğum Yılı ile Yaş Hesaplama\n",
+        "dogum_yili = input(\"Doğum yılınızı giriniz: \")\n",
+        "yas = 2026 - int(dogum_yili)\n",
+        "print(f\"Yaşınız {yas} dır.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lah2exT1z1RC",
+        "outputId": "82d14e12-485c-4f7f-87d0-3dca3fa89262"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Doğum yılınızı giriniz: 1927\n",
+            "Yaşınız 99 dır.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Üç Sayının Ortalaması\n",
+        "sayi1 = float(input(\"Birinci sayıyı giriniz: \"))\n",
+        "sayi2 = float(input(\"İkinci sayıyı giriniz: \"))\n",
+        "sayi3 = float(input(\"Üçüncü sayıyı giriniz: \"))\n",
+        "ort = (sayi1 + sayi2 + sayi3) / 3\n",
+        "print(f\"Girdiğiniz sayıların ortalaması {ort} dur.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "isI8PyaCz9sU",
+        "outputId": "b769f429-d676-4cc3-95a9-0ec5dedd2c3f"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Birinci sayıyı giriniz: 28\n",
+            "İkinci sayıyı giriniz: 49\n",
+            "Üçüncü sayıyı giriniz: 93\n",
+            "Girdiğiniz sayıların ortalaması 56.666666666666664 dur.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Kare, Küp ve Karekök Hesaplama\n",
+        "import math\n",
+        "a = float(input(\"Lütfen bir sayı giriniz: \"))\n",
+        "kare = a**2\n",
+        "kup = a**3\n",
+        "karekok = math.sqrt(a)\n",
+        "print(f\"Girdiğiniz sayının karesi {kare} küpü {kup} ve karekökü {karekok} dür.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NohfbJF80DRa",
+        "outputId": "b3ddf0a0-2bc4-4a25-9384-a179f8e4412d"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lütfen bir sayı giriniz: 4\n",
+            "Girdiğiniz sayının karesi 16.0 küpü 64.0 ve karekökü 2.0 dür.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
